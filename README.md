@@ -1,5 +1,12 @@
 # React 101
 
+## Stage 5 - Prettier countdown timer
+
+Make sure to `npm install` at this step, since we just installed the `moment` and `moment-countdown` libraries.
+
+This is a rather simple change, and mostly unrelated to React -- see `components/CountdownClock.js` for details.
+
+
 ## Stage 4 - Updating the Timer
 
 React is now automatically updating the timer 100 times a second.  (Also, we fixed our PropType errors).
