@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-
-// We import CountdownClock here
 import CountdownClock from './components/CountdownClock';
+
+// lets set our date to Christmas 2018
+const christmas = new Date('December 25, 2018');
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>Countdown Timer</h1>
-        {/* 
-          You comment in React using an open block. 
-          Blocks can do a lot more than just comment. 
-          We'll see more of these blocks in later stages.
+        {/*
+          Now we're passing two props to CountdownClock.
 
-          Look at how CountdownClock is inserted as a tag 
-          on the following line.
+          'label' is a string prop, so we can pass it in without curly braces
+          You can pass strings, numbers, and booleans without curly braces, as long
+          as they aren't stored in variables (i.e., they are "literals")
 
-          In the next stage, we'll see how to pass parameters
-          to CountdownClock.
+          To pass variables and objects, you need to use curly braces.
+
+          These props can be accessed inside `CountdownClock.render()` through the
+          `this.props` object.
         */}
-        <CountdownClock />
+        <CountdownClock
+          label="Time to Christmas 2018"
+          date={christmas}
+        />
       </div>
     );
   }
