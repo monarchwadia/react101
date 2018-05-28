@@ -1,5 +1,13 @@
 # React 101
 
+## Stage 4 - Updating the Timer
+
+React is now automatically updating the timer 100 times a second.  (Also, we fixed our PropType errors).
+
+This is sufficient to make the app work, but there is a better way to do it -- by isolating the update timer inside the Timer component. This way, only that component is updated 100 times a second, instead of React having to check the entire app for updates.
+
+In the next stage, we'll catch a glimpse of component lifecycles by setting setInterval inside `componentDidMount` and unsetting it inside `componentWillUnmount`
+
 ## Stage 3 - Passing Parameters
 
 One of React's strengths is the ability to parcel and reuse the same code in multiple places. In this stage, we're going to pass "props" to CountdownClock so we can configure the date we're counting down to.
