@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import 'moment-countdown'; // install the `countdown()` plugin for moment
+import 'moment-countdown';
 
 class CountdownClock extends Component {
 
@@ -9,7 +9,6 @@ class CountdownClock extends Component {
     const label = this.props.label;
     const date = this.props.date;
 
-    // render timeLeft as a string now, using `moment` and `moment-countdown`
     const timeLeft = moment(date).countdown().toString();
 
     return (
