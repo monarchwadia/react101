@@ -1,5 +1,12 @@
 # React 101
 
+## Stage 6b - Dropdown
+
+Here's where we see React's true usefulness. React lets us isolate state from components, thereby allowing us to modify both in isolation from one another.
+
+There's a lot going on in this stage. Walk through `App.js`, `components/CountdownClock.js` and `components/DateDropdown.js`. Try to understand how the application works.
+
+
 ## Stage 6a - State
 
 What if we wanted to support multiple timers, and not just one for Christmas? And what if we wanted to switch between timers using a dropdown?
