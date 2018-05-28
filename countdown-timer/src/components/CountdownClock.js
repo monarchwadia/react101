@@ -23,17 +23,11 @@ class CountdownClock extends Component {
   }
 }
 
-// PropTypes is a standard React library that helps make your code safer
-// by making sure your props are as expected.
-// The Workhaus Academy React course dives deep into PropTypes
-// and other best practices, so that you can become a better 
-// developer and write cleaner, safer, better code.
 CountdownClock.propTypes = {
   date: PropTypes.instanceOf(Date).isRequired,
-
-  // `color` is printing an error right now because there is no `color`
-  // prop being passed into the CountdownClock component in App.js
-  color: PropTypes.string.isRequired
+  // Fixed by changing `color` to `label`. No more errors, 
+  // and now `label` is being checked for.
+  label: PropTypes.string.isRequired 
 }
 
 export default CountdownClock;

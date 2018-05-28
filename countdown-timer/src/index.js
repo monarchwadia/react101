@@ -4,8 +4,13 @@ import './index.css';
 import App from './App';
 import { unregister } from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// We have moved the `render` invocation into its own function
+function render() {
+  ReactDOM.render(<App />, document.getElementById('root'));
+}
 
-// unregistering the service worker fixes hard caching issues in some projects
-// registerServiceWorker()
+// Call `render` 100 times per second.
+// That's it, now the countdown timer will update.
+setInterval(render, 10);
+
 unregister();
