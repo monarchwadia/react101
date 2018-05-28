@@ -1,8 +1,12 @@
 # React 101
 
-Hello, World!
+## Stage 1
 
-This repository will be populated by the time the event starts.
+Currently, the project is mostly empty. A simple `h1` and `p` tag are the only elements present on this single page app.
+
+The entrypoint of the project is `src/index.js`. `create-react-app` bundles and inserts a `script` tag inside `public/index.html` during the build step, so you don't have to worry about manually linking to your script.
+
+In Stage 2, we will add a new component: `CountdownClock`.
 
 
 #### Date
@@ -19,5 +23,3 @@ Workhaus
 30 Wellington Street West, 5th Floor
 Toronto, ON M5L 1B1
 ```
-
-See you there!
