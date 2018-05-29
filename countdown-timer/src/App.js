@@ -4,7 +4,7 @@ import DateDropdown from './components/DateDropdown';
 
 class App extends Component {
   // As per React convention, we initialize the state here
-  this.state = {
+  state = {
     options: [
       {
         name: 'Tomorrow',
