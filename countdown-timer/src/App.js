@@ -3,11 +3,29 @@ import CountdownClock from './components/CountdownClock';
 import DateDropdown from './components/DateDropdown';
 
 class App extends Component {
-  // As per React convention, we initialize the state inside the constructor
-  constructor() {
-    super();
-    this.state = INITIAL_STATE;
-  }
+  // As per React convention, we initialize the state here
+  this.state = {
+    options: [
+      {
+        name: 'Tomorrow',
+        date: new Date('May 29, 2018 00:00:00')
+      },
+      {
+        name: 'Canada Day 2018',
+        date: new Date('July 1, 2018 00:00:00')
+      },
+      {
+        name: 'Christmas 2018',
+        date: new Date('December 25, 2018 00:00:00')
+      },
+      {
+        name: 'New Year 2019',
+        date: new Date('January 1, 2019 00:00:00')
+      }
+    ],
+    // Notice that selected starts off as 'null' in this stage.
+    selected: null
+  };
 
   // As per React convention, this method handles the onChange event
   // that is forwarded up by the DateDropdown.
