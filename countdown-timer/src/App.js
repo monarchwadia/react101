@@ -2,30 +2,6 @@ import React, { Component } from 'react';
 import CountdownClock from './components/CountdownClock';
 import DateDropdown from './components/DateDropdown';
 
-// The options get passed into the DateDropdown
-const INITIAL_STATE = {
-  options: [
-    {
-      name: 'Tomorrow',
-      date: new Date('May 29, 2018 00:00:00')
-    },
-    {
-      name: 'Canada Day 2018',
-      date: new Date('July 1, 2018 00:00:00')
-    },
-    {
-      name: 'Christmas 2018',
-      date: new Date('December 25, 2018 00:00:00')
-    },
-    {
-      name: 'New Year 2019',
-      date: new Date('January 1, 2019 00:00:00')
-    }
-  ],
-  // Notice that selected starts off as 'null' in this stage.
-  selected: null
-}
-
 class App extends Component {
   // As per React convention, we initialize the state inside the constructor
   constructor() {
