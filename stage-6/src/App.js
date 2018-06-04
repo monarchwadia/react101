@@ -9,8 +9,8 @@ const INITIAL_STATE = {
   // `selected` is what gets displayed in the app
   // Try changing this and see what happens
   selected: {
-    name: 'Christmas 2018',
-    date: new Date('December 25, 2018 00:00:00')
+    name: "New Year's 2019",
+    date: new Date('January 1, 2019 00:00:00')
   }
 }
 

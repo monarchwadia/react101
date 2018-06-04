@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import CountdownClock from './components/CountdownClock';
 
-// lets set our date to Christmas 2018
-const christmas = new Date('December 25, 2018');
+// lets set our date to New Year's 2019
+const newYear = new Date('January 1, 2019');
 
 class App extends Component {
   render() {
@@ -22,8 +22,8 @@ class App extends Component {
           `this.props` object.
         */}
         <CountdownClock
-          label="Time to Christmas 2018"
-          date={christmas}
+          label="Time to New Year's 2019"
+          date={newYear}
         />
       </div>
     );

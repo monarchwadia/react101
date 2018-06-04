@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CountdownClock from './components/CountdownClock';
 
-const christmas = new Date('December 25, 2018');
+const newYear = new Date('January 1, 2019');
 
 class App extends Component {
   render() {
@@ -9,8 +9,8 @@ class App extends Component {
       <div className="App">
         <h1>Countdown Timer</h1>
         <CountdownClock
-          label="Time to Christmas 2018"
-          date={christmas}
+          label="Time to New Year's 2019"
+          date={newYear}
         />
       </div>
     );

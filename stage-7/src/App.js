@@ -3,22 +3,20 @@ import CountdownClock from './components/CountdownClock';
 import DateDropdown from './components/DateDropdown';
 
 // The options get passed into the DateDropdown
+const endOfToday = new Date();
+endOfToday.setHours(23,59,59,999);
 const INITIAL_STATE = {
   options: [
     {
       name: 'Tomorrow',
-      date: new Date('May 29, 2018 00:00:00')
+      date: endOfToday
     },
     {
       name: 'Canada Day 2018',
       date: new Date('July 1, 2018 00:00:00')
     },
     {
-      name: 'Christmas 2018',
-      date: new Date('December 25, 2018 00:00:00')
-    },
-    {
-      name: 'New Year 2019',
+      name: "New Year's 2019",
       date: new Date('January 1, 2019 00:00:00')
     }
   ],

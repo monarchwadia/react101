@@ -1,6 +1,6 @@
 # React 101 - Stage 6 - State
 
-What if we wanted to support multiple timers, and not just one for Christmas? And what if we wanted to switch between timers using a dropdown?
+What if we wanted to support multiple timers, and not just one for New Year's? And what if we wanted to switch between timers using a dropdown?
 
 In this stage, we'll teach our code to change the target date based on a simple code change. This will lead into the next stage, where we'll apply the same change using a dropdown, in real time.
 
